@@ -39,3 +39,8 @@ yes|ssh -T git@github.com
 ```
 ---
 **Next time if you clone something change it to ssh, if already exist repo is https change remote to ssh**
+
+like this
+```bash
+git remote set-url origin git@github.com:user/repo.git
+```
