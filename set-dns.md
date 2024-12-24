@@ -4,6 +4,11 @@
 ```bash
 sudo vim /etc/systemd/resolved.conf
 ```
+copy & paste
+```
+[Resolve]
+DNS=[dns ip]
+```
 
 **2. choose dns**
 - [mullvad](https://mullvad.net/en/help/dns-over-https-and-dns-over-tls) **recommend**
