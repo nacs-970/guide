@@ -16,7 +16,7 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 
 **3. set ssh-agent:**
 
-start ssh-agent
+check ssh-agent
 ```bash
 eval "$(ssh-agent -s)"
 ```
