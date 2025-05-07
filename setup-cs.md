@@ -20,7 +20,7 @@ echo -e "[boot]\nsystemd=true\n[automount]\nenabled=true\noptions=metadata" | su
 ###### 8.6.7 Make sure wsl does not consume too much resource 
 ```
 HOME_DIR=$(wslpath -u $(cmd.exe /c echo %USERPROFILE% | tr -d '\r'))
-echo -e "# Settings apply across all Linux distros running on WSL 2\n[wsl2]\n# Limits VM memory to use no more than 4 GB,\n# this can be set as whole numbers using GB or MB\nmemory=2GB\n# Sets the VM to use two virtual processors\nprocessors=1" > tee $HOME_DIR/.wslconfig
+echo -e "# Settings apply across all Linux distros running on WSL 2\n[wsl2]\n# Limits VM memory to use no more than 4 GB,\n# this can be set as whole numbers using GB or MB\nmemory=2GB\n# Sets the VM to use two virtual processors\nprocessors=1" | tee $HOME_DIR/.wslconfig > /dev/null
 ```
 
 ###### 9.2.3 Install tar, git,  build-essential, pip, dos2unix, emacs, bat, vim and  java to 11 Upgrade pip and set up tool
