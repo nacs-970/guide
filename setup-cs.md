@@ -1,7 +1,8 @@
-# กรุาทำถึง 8.6.2 ก่อนแล้วค่อย copy ด้านล่าง
-# น้องๆ ช่วยเปิด doc ลิ้วค์ด้านล่างนี้ไปด้วยไม่ใช่ copy วางอย่างเดียว เผื่อเกิด error จะได้ใช้วิธีปกติแทน
 
 **[เปิด link อ่านด้วย !!!!](https://cmu.to/cs111env)**
+
+# กรุาทำถึง 8.6.2 ก่อนแล้วค่อย copy ด้านล่าง
+# น้องๆ ช่วยเปิด doc ลิ้วค์ด้านล่างนี้ไปด้วยไม่ใช่ copy วางอย่างเดียว เผื่อเกิด error จะได้ใช้วิธีปกติแทน
 
 #### 8.6.3 Link windows' Documents folder to ubuntu (Modify the command accordingly if your Desktop/Downloads/Documents are not on C drive)
 ```
