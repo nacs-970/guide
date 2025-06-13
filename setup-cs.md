@@ -34,7 +34,7 @@ sudo add-apt-repository -y  ppa:kelleyk/emacs;sudo apt update; sudo apt upgrade 
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo gpg --dearmor -o /usr/share/keyrings/sublime.gpg;echo "deb [signed-by=/usr/share/keyrings/sublime.gpg] https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list; sudo apt update; sudo apt install sublime-text
 ```
 
-###### 13 Install dot files + 14 (Optional) Base16 color  
+#### 13 Install dot files + 14 (Optional) Base16 color  
 ```
 git clone --depth 1 https://github.com/kitt-cmu/ubuntu_home25.git /tmp/temp;cd /tmp/temp/;mv .bashrc ~/;mv .bash_profile ~/;mv .dircolors ~/;mv .gitconfig ~/;mv .emacs.d ~/;source ~/.bash_profile;source ~/.bashrc;git clone https://github.com/tinted-theming/tinted-shell.git "$HOME"/.config/tinted-shell;cd
 ```
