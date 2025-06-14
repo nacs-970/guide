@@ -2,7 +2,7 @@
 ## น้องๆ ช่วยเปิด doc ลิ้วค์ด้านล่างนี้ไปด้วยไม่ใช่ copy วางอย่างเดียว เผื่อเกิด error จะได้ใช้วิธีปกติแทน
 
 #### 8.6.3 Link windows' Documents folder to ubuntu (Modify the command accordingly if your Desktop/Downloads/Documents are not on C drive)
-**run in cmd**
+**run in cmd or ubuntu**
 ```
 HOME_DIR=$(wslpath -u $(cmd.exe /c echo %USERPROFILE% | tr -d '\r')); [[ -e "$HOME_DIR/OneDrive/Desktop" ]] && ln -sf "$HOME_DIR/OneDrive/Desktop" ~/ || ln -sf "$HOME_DIR/Desktop" ~ ; [[ -e "$HOME_DIR/OneDrive/Documents" ]] && ln -sf "$HOME_DIR/OneDrive/Documents" ~/ || ln -sf "$HOME_DIR/Documents" ~ ; ln -sf "$HOME_DIR/Downloads" ~; sudo apt upgrade -y
 ```
@@ -18,7 +18,7 @@ echo -e "[boot]\nsystemd=true\n[automount]\nenabled=true\noptions=metadata" | su
 ```
 
 #### 8.6.7 Make sure wsl does not consume too much resource 
-**run in cmd**
+**run in cmd or ubuntu**
 ```
 HOME_DIR=$(wslpath -u $(cmd.exe /c echo %USERPROFILE% | tr -d '\r'));
 echo -e "# Settings apply across all Linux distros running on WSL 2\n[wsl2]\n# Limits VM memory to use no more than 4 GB,\n# this can be set as whole numbers using GB or MB\nmemory=2GB\n# Sets the VM to use two virtual processors\nprocessors=1" | tee $HOME_DIR/.wslconfig > /dev/null
