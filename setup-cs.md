@@ -4,7 +4,7 @@
 #### 8.6.3 Link windows' Documents folder to ubuntu (Modify the command accordingly if your Desktop/Downloads/Documents are not on C drive)
 **run in cmd or ubuntu**
 ```
-HOME_DIR=$(wslpath -u $(cmd.exe /c echo %USERPROFILE% | tr -d '\r')); [[ -e "$HOME_DIR/OneDrive/Desktop" ]] && ln -sf "$HOME_DIR/OneDrive/Desktop" ~/ || ln -sf "$HOME_DIR/Desktop" ~ ; [[ -e "$HOME_DIR/OneDrive/Documents" ]] && ln -sf "$HOME_DIR/OneDrive/Documents" ~/ || ln -sf "$HOME_DIR/Documents" ~ ; ln -sf "$HOME_DIR/Downloads" ~; sudo apt upgrade -y
+HOME_DIR=$(wslpath -u $(cmd.exe /c echo %USERPROFILE% | tr -d '\r')); [[ -e "$HOME_DIR/OneDrive/Desktop" ]] && ln -sf "$HOME_DIR/OneDrive/Desktop" ~/ || ln -sf "$HOME_DIR/Desktop" ~ ; [[ -e "$HOME_DIR/OneDrive/Documents" ]] && ln -sf "$HOME_DIR/OneDrive/Documents" ~/ || ln -sf "$HOME_DIR/Documents" ~ ; ln -sf "$HOME_DIR/Downloads" ~;sudo apt update;sudo apt upgrade -y
 ```
 
 #### 8.6.4 (Optional) And if you have a D: drive u can move your home directory there.
