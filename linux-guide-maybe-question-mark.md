@@ -168,6 +168,10 @@ ffmpeg -i a.mp4 -af volume=7 -vn x.mp4
 # ffmpeg increase audio volume
 ffmpeg -i a.mp4 -filter:a "volume=10dB" -c:v copy out.mp4
 
+# ffmpeg overlay two png + align center
+
+ffmpeg -i 1.png -i 2.png -filter_complex "[0][1]overlay=(W-w)/2:(H-h)/2." out.png;done
+
 # Reduce image quality
 Install imagemagick
 

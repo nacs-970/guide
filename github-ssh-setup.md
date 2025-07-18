@@ -4,7 +4,7 @@ make your local machine can acess to github.
 
 **1. make config for ssh:**
 ```bash
-mkdir -p ~/.ssh | touch ~/.ssh/config | echo "Host *\nAddKeysToAgent yes\nIdentityFile ~/.ssh/id_ed25519 \n #UseKeychain yes # Passphrase" > ~/.ssh/config
+mkdir -p ~/.ssh ; touch ~/.ssh/config ; echo "Host *\nAddKeysToAgent yes\nIdentityFile ~/.ssh/id_ed25519 \n #UseKeychain yes # Passphrase" > ~/.ssh/config
 ```
 
 **2. generate ssh key:**
