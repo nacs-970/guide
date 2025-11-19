@@ -712,3 +712,7 @@ yay -S $(pacman -Qi spotdl | grep "Depends On" | cut -d: -f2)
 # PTP Camera Storage
 https://wiki.archlinux.org/title/GPhoto#Example_usage_with_GVfs
 yay -S gphoto2 gvfs-gphoto2
+
+# Open SSL encryption file
+openssl aes-265-cbc -pdkdf2 -e -a -in msg.md -out encrypt.md
+openssl aes-265-cbc -pdkdf2 -d -a -in encrypt.md -out msg.md
